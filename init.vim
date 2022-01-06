@@ -15,7 +15,7 @@ set mouse=a
 
 " Не уверен что делает. Вроде как улучшает работу backspace
 set backspace=indent,eol,start
-                      
+
 
 set colorcolumn=79
 
@@ -23,6 +23,8 @@ set nowrap
 
 " global copy
 set clipboard=unnamedplus
+
+
 
 
 set title
@@ -43,6 +45,8 @@ Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'https://github.com/morhetz/gruvbox'
 
 
+" indent line
+Plug 'https://github.com/Yggdroot/indentLine'
 
 call plug#end()
 
@@ -64,3 +68,7 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 " Start NERDTree. If a file is specified, move the cursor to its window.
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+
+
+" indent lines
+let g:indentLine_char = '|'
