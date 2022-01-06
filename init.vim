@@ -21,6 +21,9 @@ set colorcolumn=79
 
 set nowrap
 
+" global copy
+set clipboard=unnamedplus
+
 
 set title
 set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
